@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ButtonCount</string>
+
+    <string name="PVAMU">PVAMU!</string>
+    <string name="ButtonTitle">Count Button Press</string>
+    <string name="action_settings">Settings</string>
+</resources>
