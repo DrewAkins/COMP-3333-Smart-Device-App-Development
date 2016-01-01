@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/myLayout"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Prairie View AM University"
+        android:id="@+id/textView"
+        android:textColor="#ff35d3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COUNT BTN CLICK"
+        android:id="@+id/button"
+        android:onClick="buttonClick"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COUNT = 1"
+        android:id="@+id/COUNTER"
+        android:textSize="35dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DREW AKINS"
+        android:id="@+id/NAME"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="finger location"
+        android:id="@+id/editText1"
+        android:layout_below="@+id/COUNTER"
+        android:layout_alignLeft="@+id/COUNTER"
+        android:layout_alignStart="@+id/COUNTER"
+        android:layout_marginTop="52dp"
+        android:singleLine="false" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:id="@+id/button2"
+        android:onClick="Restart"
+        android:textColor="#32ffc8"
+        android:layout_alignTop="@+id/button"
+        android:layout_toRightOf="@+id/COUNTER"
+        android:layout_toEndOf="@+id/COUNTER"
+        android:background="#010101" />
+
+</RelativeLayout>
